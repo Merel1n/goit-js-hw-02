@@ -15,13 +15,15 @@
 // в іншому випадку функція має повертати рядок "You ordered <quantity> droids worth <totalPrice> credits!", де <quantity> це кількість замовлених дроїдів, а <totalPrice> це їх загальна вартість.
 
 
+function makeTransaction(quantity, pricePerDroid, customerCredits) {
+    let totalPrice = quantity * pricePerDroid;
 
-
-
-
-
-
-
+    if (totalPrice > customerCredits) {
+    return "Insufficient funds!"
+    } else {
+        return `You ordered ${quantity} droids worth ${totalPrice} credits!`
+}
+}
 
 // Візьми код нижче і встав після оголошення своєї функції для перевірки коректності її роботи. У консоль будуть виведені результати її роботи.
 

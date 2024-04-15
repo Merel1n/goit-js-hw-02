@@ -6,14 +6,15 @@
 // Якщо знайдено заборонене слово (spam або sale), то функція повертає буль true
 // Якщо в рядку відсутні заборонені слова, функція повертає буль false
 
-
-
-
-
-
-
-
-
+function checkForSpam(message) {
+    if (message.toLowerCase().includes('spam')) {
+        return 'true';
+    } else if (message.toLowerCase().includes('sale')) {
+        return 'true';
+    } else {
+        return 'false'
+    }
+}
 
 
 // Візьми код нижче і встав після оголошення своєї функції для перевірки коректності її роботи. У консоль будуть виведені результати її роботи.

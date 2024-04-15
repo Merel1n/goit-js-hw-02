@@ -7,11 +7,19 @@
 // Якщо довжина перевищує maxLength, то функція обрізає рядок до maxLength символів, додає трикрапку "..." в кінці та повертає обрізану версію.
 
 
+function formatMessage(message, maxLength) {
 
+    if (message.length <= maxLength) {
+        return message;
+    } else {
+        return `${message.slice (0, maxLength)}...`
+    }
+}
 
-
-
-
+// function formatMessage(message, maxLength) {
+//   const formMessage = message.length <= maxLength ? `${message}` : `${message.slice(0, maxLength)}...`;
+//   return formMessage;
+// }
 
 
 

@@ -1,6 +1,8 @@
 "use strict";
 
 function getShippingCost(country) {
+
+   let result;
    
      switch (country) {
         case 'China':

@@ -2,11 +2,11 @@
 
 function checkForSpam(message) {
     if (message.toLowerCase().includes('spam')) {
-        return 'true';
+        return true;
     } else if (message.toLowerCase().includes('sale')) {
-        return 'true';
+        return true;
     } else {
-        return 'false'
+        return false
     }
 }
 
